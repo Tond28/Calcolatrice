@@ -11,7 +11,6 @@
 ## Changelog
 ### 07/11
 - Aggiunto file moltdiv.py
-=======
 - Aggiunto file Potenza-Radice.py
 - Aggiunto file Area_poligoni.py
 - Aggiornato calcolatrice.py
