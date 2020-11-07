@@ -57,3 +57,5 @@ root.mainloop()
 print("alpha")
 
 print("beta")
+
+print("ciao")
