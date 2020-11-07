@@ -39,7 +39,7 @@ def reset(*args):
 
 root=Tk()
 root.title("Moltiplicazione|Divisione")
-root.geometry("350x500")
+root.geometry("650x400")
 mainframe = ttk.Frame(root)
 mainframe.place(height=0, x=0, y=0)
 
@@ -61,26 +61,26 @@ molt2_entry.place(height=100, x=205, y=50)
 
 
 div1_entry=Entry(root, width=3, textvariable=div_1, font=('verdana', 50))
-div1_entry.place(height=100, x=5, y=210)
+div1_entry.place(height=100, x=5, y=240)
 
 
 div2_entry=Entry(root, width=3, textvariable=div_2, font=('verdana', 50))
-div2_entry.place(height=100, x=205, y=210)
+div2_entry.place(height=100, x=205, y=240)
 
 
-Label(root, text="RISULTATO PRODOTTO:", font=('verdana', 15)).place(height=20, x=0, y=330)
-Label(root, text="RISULTATO DIVISIONE:", font=('verdana', 15)).place(height=20, x=0, y=390)
-Label(root, text="Prodotto", font=('verdana', 20)).pack(anchor=N)
-Label(root, text="Divisione", font=('verdana', 20)).place(height=30, x=103, y=170)
+Label(root, text="=", font=('verdana', 15)).place(height=20, x=360, y=90)
+Label(root, text="=", font=('verdana', 15)).place(height=20, x=360, y=280)
+Label(root, text="Prodotto", font=('verdana', 20)).place(height=30, x=115, y=5)
+Label(root, text="Divisione", font=('verdana', 20)).place(height=30, x=103, y=200)
 Label(root, text="x", font=('verdana', 20)).place(height=50, x=157, y=73)
-Label(root, text=":", font=('verdana', 20)).place(height=40, x=160, y=240)
+Label(root, text=":", font=('verdana', 20)).place(height=40, x=160, y=270)
 
-Label(root, textvariable=risultato, font=('verdana', 15)).place(height=20, x=250, y=330)
-Label(root, textvariable=risultato2, font=('verdana', 15)).place(height=20, x=250, y=390)
+Label(root, textvariable=risultato, font=('verdana', 15)).place(height=20, x=390, y=87)
+Label(root, textvariable=risultato2, font=('verdana', 15)).place(height=20, x=390, y=275)
 
-Button(root, text="CALCOLA PRODOTTO", command=moltiplicazione, font=('verdana', 15)).place(height=25, x=5, y=360)
-Button(root, text="CALCOLA DIVISIONE", command=divisione, font=('verdana', 15)).place(height=25, x=5, y=420)
-Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=255, y=465)
+Button(root, text="CALCOLA PRODOTTO", command=moltiplicazione, font=('verdana', 15)).place(height=25, x=5, y=160)
+Button(root, text="CALCOLA DIVISIONE", command=divisione, font=('verdana', 15)).place(height=25, x=5, y=350)
+Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=550, y=365)
 
 
 root.bind('<Return>', moltiplicazione)

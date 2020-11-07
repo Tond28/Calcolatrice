@@ -36,7 +36,7 @@ def reset(*args):
 
 root=Tk()
 root.title("Calcolatrice (+ , -)")
-root.geometry("650x500")
+root.geometry("650x400")
 mainframe = ttk.Frame(root)
 mainframe.place(height=0, x=0, y=0)
 
@@ -67,7 +67,7 @@ sottr2_entry.place(height=100, x=205, y=240)
 
 Label(root, text="=", font=('verdana', 15)).place(height=20, x=360, y=90)
 Label(root, text="=", font=('verdana', 15)).place(height=20, x=360, y=280)
-Label(root, text="Somma", font=('verdana', 20)).pack(anchor=N)
+Label(root, text="Somma", font=('verdana', 20)).place(height=30, x=115, y=5)
 Label(root, text="Sottrazione", font=('verdana', 20)).place(height=30, x=103, y=200)
 Label(root, text="+", font=('verdana', 20)).place(height=50, x=157, y=73)
 Label(root, text="-", font=('verdana', 20)).place(height=40, x=160, y=270)
@@ -77,7 +77,7 @@ Label(root, textvariable=risultato2, font=('verdana', 20)).place(height=30, x=39
 
 Button(root, text="CALCOLA ADDIZIONE", command=addizione, font=('verdana', 15)).place(height=25, x=5, y=160)
 Button(root, text="CALCOLA SOTTRAZIONE", command=sottrazione, font=('verdana', 15)).place(height=25, x=5, y=350)
-Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=550, y=465)
+Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=550, y=365)
 
 
 root.bind('<Return>', addizione)
