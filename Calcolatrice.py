@@ -54,5 +54,4 @@ helpmenu.add_command(label="Exit", command=root.quit)
 
 root.config(menu=menubar)
 
-root.bind('<Return>', open_program_somma)
 root.mainloop()
