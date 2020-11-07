@@ -25,10 +25,16 @@ def open_program_pytagora():
     os.system('"%s"' %"single programs\pytagora.py")
 
 def open_program_matrici3x3():
-    os.system('"%s"' %"single programs\matrici.py")
+    os.system('"%s"' %"single programs\matrice3x3.py")
 
 def open_program_matrici2x2():
     os.system('"%s"' %"single programs\matrici2x2.py")
+
+def open_program_sistema2x2():
+    os.system('"%s"' %"single programs\Sistema2x2.py")
+
+def open_program_sistema3x3():
+    os.system('"%s"' %"single programs\Sistema3x3.py")
 
 def donothing():
    filewin = Toplevel(root)
@@ -47,8 +53,10 @@ filemenu.add_command(label="Potenza|Radice", command=open_program_potenza)
 
 filemenu2 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Algebra", menu=filemenu2)
-filemenu2.add_command(label="Matrici3x3", command=open_program_matrici3x3)
-filemenu2.add_command(label="Matrici2x2", command=open_program_matrici2x2)
+filemenu2.add_command(label="Matrice2x2", command=open_program_matrici2x2)
+filemenu2.add_command(label="Matrice3x3", command=open_program_matrici3x3)
+filemenu2.add_command(label="Cramer2x2", command=open_program_sistema2x2)
+filemenu2.add_command(label="Cramer3x3", command=open_program_sistema3x3)
 
 editmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria", menu=editmenu)
