@@ -1,6 +1,6 @@
 # Calcolatrice
 - Creatore: Gaetano Citarella, Filippo Tondelli
-- Versione programma: 0.1.5
+- Versione programma: 0.1.6
 ## Per funzionare neccessità di:
 - Python 3.8 (superiore)
 ## Utilità
@@ -13,5 +13,7 @@
 - Aggiunto file moltdiv.py
 - Aggiunto file Potenza-Radice.py
 - Aggiunto file Area_poligoni.py
+- Aggiunto file picgreco.py
+- Aggiornato file moltdiv.py
 - Aggiornato calcolatrice.py
 
