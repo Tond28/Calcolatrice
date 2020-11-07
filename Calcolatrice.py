@@ -18,6 +18,9 @@ def open_program_areapol():
 def open_program_areatriangolo():
     os.system('"%s"' %"single programs\Areatrriangolo.py")
 
+def open_program_cerchio():
+    os.system('"%s"' %"single programs\pigreco.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -39,7 +42,7 @@ editmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria", menu=editmenu)
 editmenu.add_command(label="Area Triangolo", command=open_program_areatriangolo)
 editmenu.add_command(label="Area Poligoni reg", command=open_program_areapol)
-
+editmenu.add_command(label="Area & 2p Cerchio", command=open_program_cerchio)
 
 helpmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Help", menu=helpmenu)
