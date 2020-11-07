@@ -56,5 +56,3 @@ root.config(menu=menubar)
 
 root.bind('<Return>', open_program_somma)
 root.mainloop()
-
-print("ciao")
