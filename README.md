@@ -10,6 +10,6 @@
 - Rifacimento home
 ##Changelog
 ### 07/11
--Aggiunto file moltdiv.py
+- Aggiunto file moltdiv.py
 - Aggiornato calcolatrice.py
 
