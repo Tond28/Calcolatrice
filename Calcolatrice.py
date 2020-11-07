@@ -15,9 +15,12 @@ def open_program_potenza():
 def open_program_areapol():
     os.system('"%s"' %"single programs\Area_Poligoni.py")
 
+<<<<<<< HEAD
 def open_program_areatriangolo():
     os.system('"%s"' %"single programs\Areatrriangolo.py")
 
+=======
+>>>>>>> 844b71fdf6931f8a01cde8ea5a5b51f55b4fab88
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -37,7 +40,11 @@ filemenu.add_command(label="Potenza|Radice", command=open_program_potenza)
 
 editmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria", menu=editmenu)
+<<<<<<< HEAD
 editmenu.add_command(label="Area Triangolo", command=open_program_areatriangolo)
+=======
+editmenu.add_command(label="Area Triangolo", command=donothing)
+>>>>>>> 844b71fdf6931f8a01cde8ea5a5b51f55b4fab88
 editmenu.add_command(label="Area Poligoni reg", command=open_program_areapol)
 
 
