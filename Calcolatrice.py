@@ -9,6 +9,12 @@ def open_program_somma():
 def open_program_moltdiv():
     os.system('"%s"' %"single programs\moltdiv.py")
 
+def open_program_potenza():
+    os.system('"%s"' %"single programs\Potenza-Radice.py")
+
+def open_program_areapol():
+    os.system('"%s"' %"single programs\Area_Poligoni.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -24,12 +30,12 @@ filemenu.add_command(label="Somma|Sottrazione", command=open_program_somma)
 filemenu.add_command(label="Moltiplicazione|Divisione", command=open_program_moltdiv)
 
 filemenu.add_separator()
-filemenu.add_command(label="Potenza", command=donothing)
-filemenu.add_command(label="Radice", command=donothing)
+filemenu.add_command(label="Potenza|Radice", command=open_program_potenza)
 
 editmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria", menu=editmenu)
 editmenu.add_command(label="Area Triangolo", command=donothing)
+editmenu.add_command(label="Area Poligoni reg", command=open_program_areapol)
 
 
 helpmenu = Menu(menubar, tearoff=0)
