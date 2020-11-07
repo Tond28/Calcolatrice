@@ -86,3 +86,5 @@ root.bind('<Return>', reset)
 
 
 root.mainloop()
+
+print("ciao")
