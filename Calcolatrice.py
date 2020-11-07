@@ -53,7 +53,6 @@ helpmenu.add_command(label="About...", command=donothing)
 helpmenu.add_separator()
 helpmenu.add_command(label="Exit", command=root.quit)
 
-
 root.config(menu=menubar)
 
 root.bind('<Return>', open_program_somma)
