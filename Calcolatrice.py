@@ -24,13 +24,19 @@ def open_program_cerchio():
 def open_program_pytagora():
     os.system('"%s"' %"single programs\pytagora.py")
 
+def open_program_matrici3x3():
+    os.system('"%s"' %"single programs\matrici.py")
+
+def open_program_matrici2x2():
+    os.system('"%s"' %"single programs\matrici2x2.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
    button.pack()
    
 root = Tk()
-root.geometry("250x100")
+root.geometry("300x300")
 root.title("Calcolatrice")
 menubar = Menu(root)
 filemenu = Menu(menubar, tearoff=0)
@@ -39,6 +45,11 @@ filemenu.add_command(label="Somma|Sottrazione", command=open_program_somma)
 filemenu.add_command(label="Moltiplicazione|Divisione", command=open_program_moltdiv)
 filemenu.add_command(label="Potenza|Radice", command=open_program_potenza)
 
+filemenu2 = Menu(menubar, tearoff=0)
+menubar.add_cascade(label="Algebra", menu=filemenu2)
+filemenu2.add_command(label="Matrici3x3", command=open_program_matrici3x3)
+filemenu2.add_command(label="Matrici2x2", command=open_program_matrici2x2)
+
 editmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria", menu=editmenu)
 editmenu.add_command(label="Area Triangolo", command=open_program_areatriangolo)
@@ -46,12 +57,14 @@ editmenu.add_command(label="Area Poligoni reg", command=open_program_areapol)
 editmenu.add_command(label="Area & 2p Cerchio", command=open_program_cerchio)
 editmenu.add_command(label="Pitagora", command=open_program_pytagora)
 
+
 helpmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Help", menu=helpmenu)
 helpmenu.add_command(label="Help Index", command=donothing)
 helpmenu.add_command(label="About...", command=donothing)
 helpmenu.add_separator()
 helpmenu.add_command(label="Exit", command=root.quit)
+
 
 root.config(menu=menubar)
 
