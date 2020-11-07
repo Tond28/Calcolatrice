@@ -38,7 +38,7 @@ def reset(*args):
 
 
 root=Tk()
-root.title("Calcolatrice (* , /)")
+root.title("Moltiplicazione|Divisione")
 root.geometry("350x500")
 mainframe = ttk.Frame(root)
 mainframe.place(height=0, x=0, y=0)
@@ -71,7 +71,7 @@ div2_entry.place(height=100, x=205, y=210)
 Label(root, text="RISULTATO PRODOTTO:", font=('verdana', 15)).place(height=20, x=0, y=330)
 Label(root, text="RISULTATO DIVISIONE:", font=('verdana', 15)).place(height=20, x=0, y=390)
 Label(root, text="Prodotto", font=('verdana', 20)).pack(anchor=N)
-Label(root, text="Rapporto", font=('verdana', 20)).place(height=30, x=103, y=170)
+Label(root, text="Divisione", font=('verdana', 20)).place(height=30, x=103, y=170)
 Label(root, text="x", font=('verdana', 20)).place(height=50, x=157, y=73)
 Label(root, text=":", font=('verdana', 20)).place(height=40, x=160, y=240)
 
