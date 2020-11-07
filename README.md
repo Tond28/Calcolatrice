@@ -13,7 +13,9 @@
 - Aggiunto file moltdiv.py
 - Aggiunto file Potenza-Radice.py
 - Aggiunto file Area_poligoni.py
+- Aggiornato calcolatrice.py
+- Aggiunto file Potenza-Radice.py
+- Aggiunto file Area_poligoni.py
 - Aggiunto file picgreco.py
 - Aggiornato file moltdiv.py
 - Aggiornato calcolatrice.py
-
