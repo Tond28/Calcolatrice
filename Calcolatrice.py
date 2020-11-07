@@ -21,6 +21,9 @@ def open_program_areatriangolo():
 def open_program_cerchio():
     os.system('"%s"' %"single programs\pigreco.py")
 
+def open_program_pytagora():
+    os.system('"%s"' %"single programs\pytagora.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -34,8 +37,6 @@ filemenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Matematica base", menu=filemenu)
 filemenu.add_command(label="Somma|Sottrazione", command=open_program_somma)
 filemenu.add_command(label="Moltiplicazione|Divisione", command=open_program_moltdiv)
-
-filemenu.add_separator()
 filemenu.add_command(label="Potenza|Radice", command=open_program_potenza)
 
 editmenu = Menu(menubar, tearoff=0)
@@ -43,6 +44,7 @@ menubar.add_cascade(label="Geometria", menu=editmenu)
 editmenu.add_command(label="Area Triangolo", command=open_program_areatriangolo)
 editmenu.add_command(label="Area Poligoni reg", command=open_program_areapol)
 editmenu.add_command(label="Area & 2p Cerchio", command=open_program_cerchio)
+editmenu.add_command(label="Pitagora", command=open_program_pytagora)
 
 helpmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Help", menu=helpmenu)
@@ -56,4 +58,3 @@ root.config(menu=menubar)
 
 root.bind('<Return>', open_program_somma)
 root.mainloop()
-
