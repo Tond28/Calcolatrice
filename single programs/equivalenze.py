@@ -131,7 +131,7 @@ opt2.place(height=60, x=150, y=122)
 
 opt3 = OptionMenu(root, Prumisura2, *OptionList2)
 opt3.config(width=2, font=('verdana', 12))
-opt3.place(height=60, x=580, y=122)
+opt3.place(height=60, x=580, y=137)
 
 root.bind('<Return>', calcolo)
 root.bind('<Return>', reset)
