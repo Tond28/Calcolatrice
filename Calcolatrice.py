@@ -36,14 +36,18 @@ def open_program_sistema2x2():
 def open_program_sistema3x3():
     os.system('"%s"' %"single programs\Sistema3x3.py")
 
+def open_program_equivalenze():
+    os.system('"%s"' %"single programs\equivalenze.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
    button.pack()
    
 root = Tk()
-root.geometry("300x300")
+root.geometry("500x500")
 root.title("Calcolatrice")
+
 menubar = Menu(root)
 filemenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Matematica base", menu=filemenu)
@@ -51,12 +55,19 @@ filemenu.add_command(label="Somma|Sottrazione", command=open_program_somma)
 filemenu.add_command(label="Moltiplicazione|Divisione", command=open_program_moltdiv)
 filemenu.add_command(label="Potenza|Radice", command=open_program_potenza)
 
+
 filemenu2 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Algebra", menu=filemenu2)
 filemenu2.add_command(label="Matrice2x2", command=open_program_matrici2x2)
 filemenu2.add_command(label="Matrice3x3", command=open_program_matrici3x3)
 filemenu2.add_command(label="Cramer2x2", command=open_program_sistema2x2)
 filemenu2.add_command(label="Cramer3x3", command=open_program_sistema3x3)
+
+
+filemenu3 = Menu(menubar, tearoff=0)
+menubar.add_cascade(label="Fisica", menu=filemenu3)
+filemenu3.add_command(label="Equivalenze", command=open_program_equivalenze)
+
 
 editmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria", menu=editmenu)
