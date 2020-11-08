@@ -57,10 +57,8 @@ Button(root, text="CALCOLA AREA", command=calcoloarea, font=('verdana', 15)).pla
 Button(root, text="CALCOLA CIRCONFERENZA", command=calcolocirc, font=('verdana', 15)).place(height=25, x=5, y=210)
 Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=505, y=300)
 
-
 root.bind('<Return>', calcoloarea)
 root.bind('<Return>', calcolocirc)
 root.bind('<Return>', reset)
-
 
 root.mainloop()
