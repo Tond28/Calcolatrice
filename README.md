@@ -7,7 +7,7 @@
 -Questo programma è stato ideato per fare calcoli di matematica di base, algebra e e geometria
 ## Prossimi aggiornamenti
 - Aggiunta funzioni
-- Rifacimento home
+- Programmi più avanzati di algebra
 ## Changelog
 ### 07/11
 - Aggiornato calcolatrice.py ala versione 0.1.0
