@@ -10,8 +10,13 @@
 - Rifacimento home
 ## Changelog
 ### 07/11
-- Aggiornato calcolatrice.py
+- Aggiornato calcolatrice.py ala versione 0.1.0
 - Aggiunto matrice2x2.py
 - Aggiunto matrice3x3.py
 - Aggiunto Sistema2x2.py
 - Aggiunto Sistema3x3.py
+- Aggiunta la voce Fisica
+- Aggiunto Equivalenze.py
+- Aggiunta la voce Geometria con altri 4 nuovi programmi
+- Aggiunta una pagina per l'aiuto a nuovi utenti
+- Aggiornata la calcolatrice.py alla versione 0.2.0
