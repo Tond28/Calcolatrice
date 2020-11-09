@@ -45,6 +45,9 @@ def open_program_helpindex():
 def open_program_about():
     os.system('"%s"' %"single programs\info.py")
 
+def open_program_forze():
+    os.system('"%s"' %"single programs\orzef.py")
+
 def english():
     language=1
 
@@ -85,6 +88,7 @@ filemenu2.add_command(label="Cramer3x3", command=open_program_sistema3x3)
 filemenu3 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Fisica", menu=filemenu3)
 filemenu3.add_command(label="Equivalenze", command=open_program_equivalenze)
+filemenu3.add_command(label="Forze", command=open_program_forze)
 
 
 editmenu = Menu(menubar, tearoff=0)
