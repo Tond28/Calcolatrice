@@ -82,6 +82,8 @@ filemenu3 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Fisica", menu=filemenu3)
 filemenu3.add_command(label="Equivalenze", command=open_program_equivalenze)
 filemenu3.add_command(label="Forze", command=open_program_forze)
+filemenu3.add_command(label="Forze 2", command=donothing)
+filemenu3.add_command(label="Momenti Forze", command=donothing)
 
 
 editmenu = Menu(menubar, tearoff=0)
