@@ -3,6 +3,8 @@ from tkinter import ttk, Canvas
 from tkinter import filedialog
 import os
 
+
+
 def open_program_somma():
     os.system('"%s"' %"single programs\somma-sottrazione.py")
 
@@ -48,6 +50,9 @@ def open_program_about():
 def open_program_forze():
     os.system('"%s"' %"single programs\orzef.py")
 
+def open_program_tempo():
+    os.system('"%s"' %"single programs\empot.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -81,6 +86,7 @@ filemenu2.add_command(label="Cramer3x3", command=open_program_sistema3x3)
 filemenu3 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Fisica", menu=filemenu3)
 filemenu3.add_command(label="Equivalenze", command=open_program_equivalenze)
+filemenu3.add_command(label="Conversioni Tempo", command=open_program_tempo)
 filemenu3.add_command(label="Forze", command=open_program_forze)
 filemenu3.add_command(label="Forze 2", command=donothing)
 filemenu3.add_command(label="Momenti Forze", command=donothing)
