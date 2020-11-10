@@ -112,5 +112,4 @@ root.bind('<Return>', Fattrito)
 root.bind('<Return>', Felastica)
 root.bind('<Return>', reset)
 
-
 root.mainloop()
