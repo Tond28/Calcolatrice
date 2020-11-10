@@ -48,13 +48,6 @@ def open_program_about():
 def open_program_forze():
     os.system('"%s"' %"single programs\orzef.py")
 
-def english():
-    language=1
-
-def italian():
-    language=0
-
-
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
