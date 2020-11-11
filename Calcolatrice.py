@@ -51,6 +51,9 @@ def open_program_forze():
 def open_program_forze2():
     os.system('"%s"' %"single programs\orzef2.py")
 
+def open_program_Momento():
+    os.system('"%s"' %"single programs\Momento.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -86,7 +89,7 @@ menubar.add_cascade(label="Fisica", menu=filemenu3)
 filemenu3.add_command(label="Equivalenze", command=open_program_equivalenze)
 filemenu3.add_command(label="Forze", command=open_program_forze)
 filemenu3.add_command(label="Forze 2", command=open_program_forze2)
-filemenu3.add_command(label="Momenti Forze", command=donothing)
+filemenu3.add_command(label="Momenti Forze", command=open_program_Momento)
 
 
 editmenu = Menu(menubar, tearoff=0)
