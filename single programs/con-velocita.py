@@ -101,8 +101,8 @@ var1_entry.place(height=100, x=5, y=80)
 
 Label(root, text="Conversione Tempo", font=('verdana', 20)).pack(anchor=N)
 Label(root, text="=", font=('verdana', 20)).place(height=50, x=230, y=100)
-Label(root, text="/", font=('verdana', 30)).place(height=70, x=210, y=129)
-Label(root, text="/", font=('verdana', 30)).place(height=70, x=550, y=129)
+Label(root, text="/", font=('verdana', 25)).place(height=70, x=213, y=130)
+Label(root, text="/", font=('verdana', 25)).place(height=70, x=553, y=130)
 Label(root, textvariable=risultato, font=('verdana', 20)).place(height=30, x=260, y=110)
 
 Button(root, text="CALCOLA", command=calcolo, font=('verdana', 15)).place(height=25, x=5, y=190)
