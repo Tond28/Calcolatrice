@@ -60,6 +60,9 @@ def open_program_Dinamica():
 def open_program_coseno():
     os.system('"%s"' %"single programs\sin-cos-tan.py")
 
+def open_program_cubo():
+    os.system('"%s"' %"single programs\cubo.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -106,6 +109,13 @@ editmenu.add_command(label="Area & 2p Cerchio", command=open_program_cerchio)
 editmenu.add_command(label="Pitagora", command=open_program_pytagora)
 editmenu.add_command(label="Coseno, Seno, Tangente", command=open_program_coseno)
 
+editmenu2 = Menu(menubar, tearoff=0)
+menubar.add_cascade(label="Geometria Solida", menu=editmenu2)
+editmenu2.add_command(label="Cubo", command=open_program_cubo)
+editmenu2.add_command(label="Parallelepipedo", command=donothing)
+editmenu2.add_command(label="Sfera", command=donothing)
+editmenu2.add_command(label="Piramide", command=donothing)
+editmenu2.add_command(label="Cono", command=donothing)
 
 helpmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Help", menu=helpmenu)

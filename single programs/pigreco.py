@@ -19,7 +19,7 @@ def calcolocirc(*args):
      
 
  except ValueError:
-     risultato.set("ERRORE")
+     risultato2.set("ERRORE")
      pass
 
 def reset(*args):
