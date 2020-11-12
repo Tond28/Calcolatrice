@@ -57,6 +57,8 @@ def open_program_Momento():
 def open_program_Dinamica():
     os.system('"%s"' %"single programs\elfillov.py")
 
+def open_program_coseno():
+    os.system('"%s"' %"single programs\sin-cos-tan.py")
 
 def donothing():
    filewin = Toplevel(root)
@@ -102,6 +104,7 @@ editmenu.add_command(label="Area Triangolo", command=open_program_areatriangolo)
 editmenu.add_command(label="Area Poligoni reg", command=open_program_areapol)
 editmenu.add_command(label="Area & 2p Cerchio", command=open_program_cerchio)
 editmenu.add_command(label="Pitagora", command=open_program_pytagora)
+editmenu.add_command(label="Coseno, Seno, Tangente", command=open_program_coseno)
 
 
 helpmenu = Menu(menubar, tearoff=0)
