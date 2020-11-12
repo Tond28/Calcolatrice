@@ -54,6 +54,10 @@ def open_program_forze2():
 def open_program_Momento():
     os.system('"%s"' %"single programs\Momento.py")
 
+def open_program_Dinamica():
+    os.system('"%s"' %"single programs\elfillov.py")
+
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -90,7 +94,7 @@ filemenu3.add_command(label="Equivalenze", command=open_program_equivalenze)
 filemenu3.add_command(label="Forze", command=open_program_forze)
 filemenu3.add_command(label="Forze 2", command=open_program_forze2)
 filemenu3.add_command(label="Momenti Forze", command=open_program_Momento)
-
+filemenu3.add_command(label="Dinamica", command=open_program_Dinamica)
 
 editmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria", menu=editmenu)
