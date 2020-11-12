@@ -10,3 +10,5 @@
 - Programmi più avanzati di algebra
 - Traduzione in inglese
 - Miglioramento schermata home
+- Geometria solida
+- Analitica
