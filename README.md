@@ -1,6 +1,6 @@
 # Calcolatrice
 - Creatore: Gaetano Citarella, Filippo Tondelli
-- Versione programma: 0.2.8
+- Versione programma: 0.2.7
 ## Per funzionare neccessità di:
 - Python 3.8 (superiore)
 ## Utilità
