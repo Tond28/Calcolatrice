@@ -69,6 +69,9 @@ def open_program_tilt():
 def open_program_velocita():
     os.system('"%s"' %"single programs\con-velocita.py")
 
+def open_program_sfera():
+    os.system('"%s"' %"single programs\sfera.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -118,7 +121,7 @@ editmenu2 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria Solida", menu=editmenu2)
 editmenu2.add_command(label="Cubo", command=open_program_cubo)
 editmenu2.add_command(label="Parallelepipedo", command=open_program_tilt)
-editmenu2.add_command(label="Sfera", command=donothing)
+editmenu2.add_command(label="Sfera", command=open_program_sfera)
 editmenu2.add_command(label="Piramide", command=donothing)
 editmenu2.add_command(label="Cono", command=donothing)
 
