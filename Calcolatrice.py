@@ -350,7 +350,6 @@ def ans_ris():
     ans_out=str(ans_out)
     uno=uno+str(ans_out)
     primo.set(ans_out)
-    print(ans_out)
 
 linea=Canvas(root, width=700, height=300)
 linea.pack()
