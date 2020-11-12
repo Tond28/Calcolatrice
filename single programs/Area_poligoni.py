@@ -49,8 +49,6 @@ llat_entry.place(height=100, x=5, y=260)
 ldiag_entry=Entry(root, width=3, textvariable=ldiag, font=('verdana', 50))
 ldiag_entry.place(height=100, x=5, y=420)
 
-
-
 Label(root, text="RISULTATO:", font=('verdana', 15)).place(height=20, x=5, y=630)
 Label(root, text="Calcolo area poligoni regolari", font=('verdana', 20)).pack(anchor=N)
 

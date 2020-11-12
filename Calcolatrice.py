@@ -63,6 +63,9 @@ def open_program_coseno():
 def open_program_cubo():
     os.system('"%s"' %"single programs\cubo.py")
 
+def open_program_tilt():
+    os.system('"%s"' %"single programs\parallelepipedo.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -84,14 +87,12 @@ filemenu.add_command(label="Somma|Sottrazione", command=open_program_somma)
 filemenu.add_command(label="Moltiplicazione|Divisione", command=open_program_moltdiv)
 filemenu.add_command(label="Potenza|Radice", command=open_program_potenza)
 
-
 filemenu2 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Algebra", menu=filemenu2)
 filemenu2.add_command(label="Matrice2x2", command=open_program_matrici2x2)
 filemenu2.add_command(label="Matrice3x3", command=open_program_matrici3x3)
 filemenu2.add_command(label="Cramer2x2", command=open_program_sistema2x2)
 filemenu2.add_command(label="Cramer3x3", command=open_program_sistema3x3)
-
 
 filemenu3 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Fisica", menu=filemenu3)
@@ -112,7 +113,7 @@ editmenu.add_command(label="Coseno, Seno, Tangente", command=open_program_coseno
 editmenu2 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria Solida", menu=editmenu2)
 editmenu2.add_command(label="Cubo", command=open_program_cubo)
-editmenu2.add_command(label="Parallelepipedo", command=donothing)
+editmenu2.add_command(label="Parallelepipedo", command=open_program_tilt)
 editmenu2.add_command(label="Sfera", command=donothing)
 editmenu2.add_command(label="Piramide", command=donothing)
 editmenu2.add_command(label="Cono", command=donothing)
@@ -123,7 +124,6 @@ helpmenu.add_command(label="Help Index", command=open_program_helpindex)
 helpmenu.add_command(label="About...", command=open_program_about)
 helpmenu.add_separator()
 helpmenu.add_command(label="Exit", command=root.quit)
-
 
 root.config(menu=menubar)
 
