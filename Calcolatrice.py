@@ -110,7 +110,7 @@ helpmenu.add_command(label="Exit", command=root.quit)
 
 root.config(menu=menubar)
 
-
+ans_out=0
 uno=""
 due=""
 
@@ -281,6 +281,7 @@ def divisione(*args):
         controllo_op=4  
 
 def risultato(*args):
+    global ans_out
     if controllo_op==1:
         risultato1=float(uno)+float(due)
         risultatoout.set(risultato1)
@@ -293,6 +294,7 @@ def risultato(*args):
     elif controllo_op==4:
         risultato1=float(uno)/float(due)
         risultatoout.set(risultato1)
+    ans_out=risultato1
 
 def cancel(*args):
     global uno, due, controllo, controllo_op
@@ -342,6 +344,13 @@ def reset():
     controllo_op=0
     controllo=0
 
+def ans_ris():
+    global uno, ans_out
+    reset()
+    ans_out=str(ans_out)
+    uno=uno+str(ans_out)
+    primo.set(ans_out)
+    print(ans_out)
 
 linea=Canvas(root, width=700, height=300)
 linea.pack()
@@ -381,6 +390,7 @@ Button(root, text="÷", command=divisione, font=('verdana', 25)).place(height=62
 Button(root, text="  =  ", command=risultato, font=('verdana', 30)).place(height=62, x=225, y=411)
 Button(root, text="DEL", command=reset, font=('verdana', 22)).place(height=62, x=225, y=230)
 Button(root, text="C", command=cancel, font=('verdana', 22)).place(height=62, x=306, y=230)
+Button(root, text="ANS", command=ans_ris, font=('verdana', 22)).place(height=62, x=351, y=411)
 
 root.bind('<Return>', risultato)
 
