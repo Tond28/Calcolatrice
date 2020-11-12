@@ -259,8 +259,6 @@ def sottrazione(*args):
         operatore.set("-")
         controllo_op=2
 
-
-
 def moltiplicazione(*args):
     global controllo, controllo_op, uno
     if uno=="":
@@ -366,7 +364,6 @@ linea.create_line(0, 135, 0, 0, width=(10))
 linea.create_line(500, 135, 500, 0, width=(10))
 linea.create_line(600, 90, 0, 90, width=(4))
 linea.create_line(600, 135, 0, 135, width=(4))
-
 
 Label(root, textvariable=primo, font=('verdana', 19)).place(height=24, x=5, y=10)
 Label(root, textvariable=operatore, font=('verdana', 19)).place(height=24, x=5, y=34)
