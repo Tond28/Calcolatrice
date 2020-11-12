@@ -4,10 +4,10 @@ from tkinter import ttk
 
 def calcolofeq(*args):
  try:
-     numlati=float(nlat.get())
-     lunglati=float(llat.get())
-     lungdiag=float(ldiag.get())
-     risultato.set(numlati*(lunglati/lungdiag))
+     fpeso=float(fp.get())
+     altezza=float(h.get())
+     lung=float(l.get())
+     risultato.set(fpeso*(altezza/lung))
 
 
  except ValueError:
@@ -17,9 +17,9 @@ def calcolofeq(*args):
 
 def reset(*args):
  clear = ""
- nlat.set(clear)
- llat.set(clear)
- ldiag.set(clear)
+ fp.set(clear)
+ h.set(clear)
+ l.set(clear)
  risultato.set(clear)
 
 
@@ -30,22 +30,22 @@ mainframe = ttk.Frame(root)
 mainframe.place(height=0, x=0, y=0)
 
 
-nlat=StringVar()
-llat=StringVar()
-ldiag=StringVar()
+fp=StringVar()
+h=StringVar()
+l=StringVar()
 risultato=StringVar()
 
 
-nlat_entry=Entry(root, width=3, textvariable=nlat, font=('verdana', 50))
-nlat_entry.place(height=100, x=5, y=100)
+fp_entry=Entry(root, width=3, textvariable=fp, font=('verdana', 50))
+fp_entry.place(height=100, x=5, y=100)
 
 
-llat_entry=Entry(root, width=3, textvariable=llat, font=('verdana', 50))
-llat_entry.place(height=100, x=5, y=260)
+h_entry=Entry(root, width=3, textvariable=h, font=('verdana', 50))
+h_entry.place(height=100, x=5, y=260)
 
 
-ldiag_entry=Entry(root, width=3, textvariable=ldiag, font=('verdana', 50))
-ldiag_entry.place(height=100, x=5, y=420)
+l_entry=Entry(root, width=3, textvariable=l, font=('verdana', 50))
+l_entry.place(height=100, x=5, y=420)
 
 
 
