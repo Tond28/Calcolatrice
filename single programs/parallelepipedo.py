@@ -49,16 +49,16 @@ risultato=StringVar()
 risultato2=StringVar()
 
 
-nlat_entry=Entry(root, width=3, textvariable=bas, font=('verdana', 50))
-nlat_entry.place(height=100, x=5, y=100)
+bas_entry=Entry(root, width=3, textvariable=bas, font=('verdana', 50))
+bas_entry.place(height=100, x=5, y=100)
 
 
-llat_entry=Entry(root, width=3, textvariable=prof, font=('verdana', 50))
-llat_entry.place(height=100, x=5, y=260)
+prof_entry=Entry(root, width=3, textvariable=prof, font=('verdana', 50))
+prof_entry.place(height=100, x=5, y=260)
 
 
-ldiag_entry=Entry(root, width=3, textvariable=alt, font=('verdana', 50))
-ldiag_entry.place(height=100, x=5, y=420)
+alt_entry=Entry(root, width=3, textvariable=alt, font=('verdana', 50))
+alt_entry.place(height=100, x=5, y=420)
 
 
 Label(root, text="AREA:", font=('verdana', 15)).place(height=20, x=5, y=565)
