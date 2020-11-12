@@ -67,6 +67,9 @@ tang_entry=Entry(root, width=3, textvariable=tan_1, font=('verdana', 50))
 tang_entry.place(height=100, x=20, y=430)
 
 
+Label(root, text="°", font=('verdana', 30)).place(height=30, x=160, y=55)
+Label(root, text="°", font=('verdana', 30)).place(height=30, x=160, y=245)
+Label(root, text="°", font=('verdana', 30)).place(height=30, x=160, y=435)
 Label(root, text="=", font=('verdana', 15)).place(height=20, x=170, y=90)
 Label(root, text="=", font=('verdana', 15)).place(height=20, x=170, y=280)
 Label(root, text="=", font=('verdana', 15)).place(height=20, x=170, y=470)
