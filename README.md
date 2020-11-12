@@ -7,7 +7,6 @@
 - Questo programma è stato ideato per fare calcoli di Matematica di base, Algebra, Geometria, Fisica
 ## Prossimi aggiornamenti
 - Aggiunta funzioni
-- Programmi più avanzati di algebra
 - Traduzione in inglese
 - Miglioramento schermata home
 - Geometria solida
