@@ -72,6 +72,9 @@ def open_program_velocita():
 def open_program_sfera():
     os.system('"%s"' %"single programs\sfera.py")
 
+def open_program_randomico():
+    os.system('"%s"' %"single programs\domclasseran.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -99,6 +102,7 @@ filemenu2.add_command(label="Matrice2x2", command=open_program_matrici2x2)
 filemenu2.add_command(label="Matrice3x3", command=open_program_matrici3x3)
 filemenu2.add_command(label="Cramer2x2", command=open_program_sistema2x2)
 filemenu2.add_command(label="Cramer3x3", command=open_program_sistema3x3)
+filemenu2.add_command(label="Random", command=open_program_randomico)
 
 filemenu3 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Fisica", menu=filemenu3)
