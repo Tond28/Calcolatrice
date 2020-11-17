@@ -416,6 +416,7 @@ Button(root, text="DEL", command=reset, font=('verdana', 22)).place(height=62, x
 Button(root, text="C", command=cancel, font=('verdana', 22)).place(height=62, x=306, y=230)
 Button(root, text="ANS", command=ans_ris, font=('verdana', 22)).place(height=62, x=351, y=411)
 
+
 root.bind('<Return>', risultato)
 
 root.mainloop()
