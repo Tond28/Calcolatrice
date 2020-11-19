@@ -1,4 +1,4 @@
-# Calcolatrice
+# ➕➖Calcolatrice➗✖️
 - Creatore: Gaetano Citarella, Filippo Tondelli
 - Versione programma: 0.2.9
 ## 📍Per funzionare neccessità di:
