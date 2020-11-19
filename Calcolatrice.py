@@ -75,6 +75,10 @@ def open_program_sfera():
 def open_program_randomico():
     os.system('"%s"' %"single programs\domclasseran.py")
 
+def open_program_piramide():
+    os.system('"%s"' %"single programs\piramide.py")
+
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -126,7 +130,7 @@ menubar.add_cascade(label="Geometria Solida", menu=editmenu2)
 editmenu2.add_command(label="Cubo", command=open_program_cubo)
 editmenu2.add_command(label="Parallelepipedo", command=open_program_tilt)
 editmenu2.add_command(label="Sfera", command=open_program_sfera)
-editmenu2.add_command(label="Piramide", command=donothing)
+editmenu2.add_command(label="Piramide", command=open_program_piramide)
 editmenu2.add_command(label="Cono", command=donothing)
 
 helpmenu = Menu(menubar, tearoff=0)
