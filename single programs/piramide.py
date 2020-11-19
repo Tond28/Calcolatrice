@@ -41,7 +41,7 @@ def reset(*args):
 
 
 root=Tk()
-root.title("Parallelepipedo")
+root.title("Piramide")
 root.geometry("600x700")
 
 

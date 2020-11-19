@@ -35,7 +35,7 @@ def reset(*args):
 
 
 root=Tk()
-root.title("Calcolatrice Area Triangolo")
+root.title("Calcolatrice Teorema di Pitagora")
 root.geometry("600x525")
 mainframe = ttk.Frame(root)
 mainframe.place(height=0, x=0, y=0)
