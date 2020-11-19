@@ -86,11 +86,9 @@ Button(root, text="CALCOLA SENO", command=sin, font=('verdana', 15)).place(heigh
 Button(root, text="CALCOLA TANGENTE", command=tan, font=('verdana', 15)).place(height=25, x=5, y=540)
 Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=550, y=595)
 
-
 root.bind('<Return>', cos)
 root.bind('<Return>', sin)
 root.bind('<Return>', tan)
 root.bind('<Return>', reset)
-
 
 root.mainloop()
