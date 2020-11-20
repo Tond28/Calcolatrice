@@ -24,7 +24,7 @@ def reset(*args):
 
 
 root=Tk()
-root.title("Calcolatrice Forze 2")
+root.title("Calcolatrice Forza d'Equilibrio")
 root.geometry("600x700")
 mainframe = ttk.Frame(root)
 mainframe.place(height=0, x=0, y=0)
