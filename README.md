@@ -9,7 +9,6 @@
 - Aggiunta funzioni
 - Traduzione in inglese
 - Miglioramento schermata home
-- Geometria solida
 - Analitica
 ## 📍Record
 - 17 Novembre: Superati i 100 commit
