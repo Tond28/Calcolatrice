@@ -78,6 +78,8 @@ def open_program_randomico():
 def open_program_piramide():
     os.system('"%s"' %"single programs\piramide.py")
 
+def open_program_cono():
+    os.system('"%s"' %"single programs\cono.py")
 
 def donothing():
    filewin = Toplevel(root)
@@ -131,7 +133,7 @@ editmenu2.add_command(label="Cubo", command=open_program_cubo)
 editmenu2.add_command(label="Parallelepipedo", command=open_program_tilt)
 editmenu2.add_command(label="Sfera", command=open_program_sfera)
 editmenu2.add_command(label="Piramide", command=open_program_piramide)
-editmenu2.add_command(label="Cono", command=donothing)
+editmenu2.add_command(label="Cono", command=open_program_cono)
 
 helpmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Help", menu=helpmenu)
