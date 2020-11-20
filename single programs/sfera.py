@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import ttk
-
+from PIL import Image
+from PIL import ImageTk
+import tkinter as tk
 
 def calcoloarea(*args):
  try:
@@ -29,12 +31,14 @@ def reset(*args):
  risultato2.set(clear)
 
 
-root=Tk()
+root=tk.Tk()
 root.title("Calcolatrice A, V; Sfera")
-root.geometry("600x350")
+root.geometry("600x550")
 mainframe = ttk.Frame(root)
 mainframe.place(height=0, x=0, y=0)
 
+immagine_tk = ImageTk.PhotoImage(Image.open("images\sfera.png"))
+tk.Label(root, image=immagine_tk).place(height=205, x=5, y=330)
 
 r=StringVar()
 risultato=StringVar()
@@ -55,7 +59,7 @@ Label(root, textvariable=risultato, font=('verdana', 15)).place(height=20, x=200
 Label(root, textvariable=risultato2, font=('verdana', 15)).place(height=20, x=230, y=300)
 Button(root, text="CALCOLA VOLUME", command=calcolovol, font=('verdana', 15)).place(height=25, x=5, y=270)
 Button(root, text="CALCOLA AREA", command=calcoloarea, font=('verdana', 15)).place(height=25, x=5, y=210)
-Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=505, y=300)
+Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=505, y=520)
 
 root.bind('<Return>', calcoloarea)
 root.bind('<Return>', calcolovol)

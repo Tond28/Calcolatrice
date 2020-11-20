@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import ttk
-
+from PIL import Image
+from PIL import ImageTk
+import tkinter as tk
 
 def calcoloarea(*args):
  try:
@@ -36,11 +38,12 @@ def reset(*args):
     risultato2.set(clear)
 
 
-root=Tk()
+root=tk.Tk()
 root.title("Parallelepipedo")
 root.geometry("600x700")
 
-
+immagine_tk = ImageTk.PhotoImage(Image.open("images\parallelepipedo.png"))
+tk.Label(root, image=immagine_tk).place(height=10000, x=300, y=-4850)
 
 prof=StringVar()
 alt=StringVar()

@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import ttk
-
+from PIL import Image
+from PIL import ImageTk
+import tkinter as tk
 
 def calcoloareaT(*args):
  try:
@@ -40,10 +42,12 @@ def reset(*args):
     risultato2.set(clear)
 
 
-root=Tk()
+root=tk.Tk()
 root.title("Piramide")
 root.geometry("600x700")
 
+immagine_tk = ImageTk.PhotoImage(Image.open("images\piramide.png"))
+tk.Label(root, image=immagine_tk).place(height=400, x=160, y=110)
 
 lat1=StringVar()
 alt=StringVar()

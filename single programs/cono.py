@@ -1,6 +1,8 @@
 from tkinter import *
 from tkinter import ttk
-
+from PIL import Image
+from PIL import ImageTk
+import tkinter as tk
 
 def calcoloareaT(*args):
  try:
@@ -36,9 +38,12 @@ def reset(*args):
     risultato2.set(clear)
 
 
-root=Tk()
+root=tk.Tk()
 root.title("Cono")
 root.geometry("600x700")
+
+immagine_tk = ImageTk.PhotoImage(Image.open("images\cono.png"))
+tk.Label(root, image=immagine_tk).place(height=400, x=300, y=100)
 
 
 lat=StringVar()
