@@ -2,7 +2,8 @@
 - Creatore: Gaetano Citarella, Filippo Tondelli
 - Versione programma: 0.3.2
 ## 📍Per funzionare neccessità di:
-- Python 3.8 (superiore)
+- __Python 3.8__ (consigliata)
+- __Pip Pillow 8.0.1__ (consigliata), per il download fare ___pip install Pillow___ sul terminale per scaricare Pillow
 ## 📍Utilità
 - Questo programma è stato ideato per fare calcoli di Matematica di base, Algebra, Geometria, Geometria Solida, Fisica.
 ## 📍Prossimi aggiornamenti
