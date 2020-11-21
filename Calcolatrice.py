@@ -81,6 +81,9 @@ def open_program_piramide():
 def open_program_cono():
     os.system('"%s"' %"single programs\cono.py")
 
+def open_program_percentuale():
+    os.system('"%s"' %"single programs\percentuale.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -101,6 +104,7 @@ menubar.add_cascade(label="Matematica base", menu=filemenu)
 filemenu.add_command(label="Somma|Sottrazione", command=open_program_somma)
 filemenu.add_command(label="Moltiplicazione|Divisione", command=open_program_moltdiv)
 filemenu.add_command(label="Potenza|Radice", command=open_program_potenza)
+filemenu.add_command(label="Percentuale", command=open_program_percentuale)
 
 filemenu2 = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Algebra", menu=filemenu2)
