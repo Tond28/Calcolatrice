@@ -14,3 +14,4 @@
 ## 📍Record
 - 17 Novembre: Superati i 100 commit
 - 19 Novembre: Raggiunta la versione 0.3.0
+- 21 Novembre: Aggiunta il primo logo dinamico, v0.3.5
