@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import ttk, Canvas
 from tkinter import filedialog
 import os
+import time
 
 def open_program_somma():
     os.system('"%s"' %"single programs\somma-sottrazione.py")
@@ -149,6 +150,21 @@ helpmenu.add_command(label="Exit", command=root.quit)
 
 root.config(menu=menubar)
 
+
+
+frames = [PhotoImage(file='images/spalla2.gif',format = 'gif -index %i' %(i)) for i in range(40)]
+def update(ind):
+    frame = frames[ind]
+    ind += 1
+    if ind>39:
+        ind = 0
+    label.configure(image=frame)
+    root.after(100, update, ind)
+
+
+
+
+
 ans_out=0
 uno=""
 due=""
@@ -277,7 +293,6 @@ def somma(*args):
         operatore.set("+")
         controllo_op=1
 
-
 def sottrazione(*args):
     global controllo, controllo_op, uno
     if uno=="":
@@ -290,7 +305,6 @@ def sottrazione(*args):
         controllo=1
         operatore.set("-")
         controllo_op=2
-
 
 def moltiplicazione(*args):
     global controllo, controllo_op, uno
@@ -330,7 +344,6 @@ def percentuale(*args):
         controllo=1
         operatore.set("%")
         controllo_op=5
-
 
 def risultato(*args):
     global ans_out
@@ -390,8 +403,7 @@ def segno(*args):
         else:
             due="-"+due
             secondo.set(due)
-
-    
+   
 def reset():
     global uno, due, controllo_op, controllo
     clear=""
@@ -450,6 +462,10 @@ Button(root, text="  =  ", command=risultato, font=('verdana', 30)).place(height
 Button(root, text="DEL", command=reset, font=('verdana', 22)).place(height=62, x=225, y=230)
 Button(root, text="C", command=cancel, font=('verdana', 22)).place(height=62, x=306, y=230)
 Button(root, text="ANS", command=ans_ris, font=('verdana', 22)).place(height=62, x=351, y=411)
+
+label = Label(root)
+label.place(height=110, x=353, y=230)
+root.after(0, update, 0)
 
 
 root.bind('<Return>', risultato)
