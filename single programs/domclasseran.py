@@ -5,17 +5,12 @@ from random import randint
 def randomnum(*args):
  try:
      finale=float(x.get())
-     y = randint(1,28)
-     if y==1:
-         risultato.set(23)
-     else:
-         z=randint(1,finale)
-         risultato.set(z)
+     z=randint(1,finale)
+     risultato.set(z)
 
  except ValueError:
      risultato.set("ERRORE")
      pass
-
 
 def reset(*args):
  clear = ""
