@@ -291,6 +291,7 @@ def sottrazione(*args):
         operatore.set("-")
         controllo_op=2
 
+
 def moltiplicazione(*args):
     global controllo, controllo_op, uno
     if uno=="":
@@ -317,6 +318,20 @@ def divisione(*args):
         operatore.set("÷")
         controllo_op=4  
 
+def percentuale(*args):
+    global controllo, controllo_op, uno
+    if uno=="":
+        uno=uno+"0"
+        primo.set(uno)
+        controllo=1
+        operatore.set("%")
+        controllo_op=5
+    else:
+        controllo=1
+        operatore.set("%")
+        controllo_op=5
+
+
 def risultato(*args):
     global ans_out
     if controllo_op==1:
@@ -331,6 +346,13 @@ def risultato(*args):
     elif controllo_op==4:
         risultato1=float(uno)/float(due)
         risultatoout.set(risultato1)
+    elif controllo_op==5:
+        if due=="":
+            risultato1=(float(uno)*1)/100
+            risultatoout.set(risultato1)
+        else:
+            risultato1=(float(uno)*float(due))/100
+            risultatoout.set(risultato1)
     ans_out=risultato1
 
 def cancel(*args):
@@ -342,6 +364,7 @@ def cancel(*args):
         controllo=0
         operatore.set("")
         controllo_op=0
+        risultatoout.set("")
     elif controllo==1:
         if risultato!=0:
             due=due[:-1]
@@ -420,6 +443,7 @@ Button(root, text="9", command=num_9, font=('verdana', 30)).place(height=62, x=1
 
 Button(root, text="+", command=somma, font=('verdana', 30)).place(height=62, x=225, y=350)
 Button(root, text="-", command=sottrazione, font=('verdana', 31)).place(height=62, x=294, y=350)
+Button(root, text="%", command=percentuale, font=('verdana', 31)).place(height=62, x=350, y=350)
 Button(root, text="X", command=moltiplicazione, font=('verdana', 32)).place(height=62, x=225, y=290)
 Button(root, text="÷", command=divisione, font=('verdana', 25)).place(height=62, x=294, y=290)
 Button(root, text="  =  ", command=risultato, font=('verdana', 30)).place(height=62, x=225, y=411)
