@@ -442,8 +442,8 @@ Button(root, text="8", command=num_8, font=('verdana', 30)).place(height=62, x=6
 Button(root, text="9", command=num_9, font=('verdana', 30)).place(height=62, x=129, y=230)
 
 Button(root, text="+", command=somma, font=('verdana', 30)).place(height=62, x=225, y=350)
-Button(root, text="-", command=sottrazione, font=('verdana', 31)).place(height=62, x=294, y=350)
-Button(root, text="%", command=percentuale, font=('verdana', 31)).place(height=62, x=350, y=350)
+Button(root, text="-", command=sottrazione, font=('verdana', 31)).place(height=62, x=295, y=350)
+Button(root, text="%", command=percentuale, font=('verdana', 32)).place(height=62, x=353, y=350)
 Button(root, text="X", command=moltiplicazione, font=('verdana', 32)).place(height=62, x=225, y=290)
 Button(root, text="÷", command=divisione, font=('verdana', 25)).place(height=62, x=294, y=290)
 Button(root, text="  =  ", command=risultato, font=('verdana', 30)).place(height=62, x=225, y=411)
