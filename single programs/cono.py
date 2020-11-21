@@ -69,7 +69,7 @@ Label(root, text="AREA:", font=('verdana', 15)).place(height=20, x=5, y=565)
 Label(root, text="VOLUME:", font=('verdana', 15)).place(height=20, x=5, y=625)
 Label(root, text="Calcolo Area e Volume Cono", font=('verdana', 20)).pack(anchor=N)
 
-Label(root, text="Lato:", font=('verdana', 20)).place(height=50, x=5, y=50)
+Label(root, text="Apotema:", font=('verdana', 20)).place(height=50, x=5, y=50)
 Label(root, text="Raggio di base:", font=('verdana', 20)).place(height=50, x=5, y=210)
 Label(root, text="Altezza:", font=('verdana', 20)).place(height=50, x=5, y=370)
 
