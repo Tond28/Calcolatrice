@@ -46,8 +46,19 @@ root=tk.Tk()
 root.title("Piramide")
 root.geometry("600x700")
 
-immagine_tk = ImageTk.PhotoImage(Image.open("images\piramide.png"))
-tk.Label(root, image=immagine_tk).place(height=400, x=160, y=110)
+frames = [PhotoImage(file='images/PYRAMID.gif',format = 'gif -index %i' %(i)) for i in range(60)]
+def update(ind):
+    frame = frames[ind]
+    ind += 1
+    if ind>59:
+        ind = 0
+    label.configure(image=frame)
+    root.after(100, update, ind)
+
+label = Label(root)
+label.place(height=250, x=353, y=20)
+root.after(0, update, 0)
+
 
 lat1=StringVar()
 alt=StringVar()
