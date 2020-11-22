@@ -144,7 +144,7 @@ helpmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Help", menu=helpmenu)
 helpmenu.add_command(label="Help Index", command=open_program_helpindex)
 helpmenu.add_command(label="About...", command=open_program_about)
-helpmenu.add_command(label="Loren Ipsum", command=donothing)
+helpmenu.add_command(label="Lorem Ipsum", command=donothing)
 helpmenu.add_separator()
 helpmenu.add_command(label="Exit", command=root.quit)
 

@@ -42,8 +42,18 @@ root=tk.Tk()
 root.title("Cono")
 root.geometry("600x700")
 
-immagine_tk = ImageTk.PhotoImage(Image.open("images\cono.png"))
-tk.Label(root, image=immagine_tk).place(height=400, x=300, y=100)
+frames = [PhotoImage(file='images/cone-unscreen.gif',format = 'gif -index %i' %(i)) for i in range(60)]
+def update(ind):
+    frame = frames[ind]
+    ind += 1
+    if ind>59:
+        ind = 0
+    label.configure(image=frame)
+    root.after(100, update, ind)
+
+label = Label(root)
+label.place(height=340, x=230, y=0)
+root.after(0, update, 0)
 
 
 lat=StringVar()
