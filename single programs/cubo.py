@@ -37,8 +37,14 @@ root.geometry("600x520")
 mainframe = ttk.Frame(root)
 mainframe.place(height=0, x=0, y=0)
 
-immagine_tk = ImageTk.PhotoImage(Image.open("images\cubo.png"))
-tk.Label(root, image=immagine_tk).place(height=400, x=5, y=220)
+frames = [PhotoImage(file='images/cube2.gif',format = 'gif -index %i' %(i)) for i in range(150)]
+def update(ind):
+    frame = frames[ind]
+    ind += 1
+    if ind>149:
+        ind = 0
+    label.configure(image=frame)
+    root.after(100, update, ind)
 
 l=StringVar()
 risultato=StringVar()
@@ -60,6 +66,11 @@ Label(root, textvariable=risultato, font=('verdana', 15)).place(height=20, x=260
 Button(root, text="CALCOLA AREA CUBO", command=calcoloarea, font=('verdana', 15)).place(height=25, x=5, y=210)
 Button(root, text="CALCOLA VOLUME CUBO", command=calcolovol, font=('verdana', 15)).place(height=25, x=5, y=270)
 Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=505, y=490)
+
+label = Label(root)
+label.place(height=200, x=400, y=40)
+root.after(0, update, 0)
+
 
 root.bind('<Return>', calcoloarea)
 root.bind('<Return>', calcolovol)
