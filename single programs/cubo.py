@@ -33,7 +33,7 @@ def reset(*args):
 
 root=tk.Tk()
 root.title("Calcolatrice A, V; Cubo")
-root.geometry("600x520")
+root.geometry("600x357")
 mainframe = ttk.Frame(root)
 mainframe.place(height=0, x=0, y=0)
 
