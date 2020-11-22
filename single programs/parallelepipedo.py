@@ -42,8 +42,18 @@ root=tk.Tk()
 root.title("Parallelepipedo")
 root.geometry("600x700")
 
-immagine_tk = ImageTk.PhotoImage(Image.open("images\parallelepipedo.png"))
-tk.Label(root, image=immagine_tk).place(height=10000, x=300, y=-4850)
+frames = [PhotoImage(file='images/parallelepipedoserio.gif',format = 'gif -index %i' %(i)) for i in range(60)]
+def update(ind):
+    frame = frames[ind]
+    ind += 1
+    if ind>59:
+        ind = 0
+    label.configure(image=frame)
+    root.after(100, update, ind)
+
+label = Label(root)
+label.place(height=340, x=420, y=-35)
+root.after(0, update, 0)
 
 prof=StringVar()
 alt=StringVar()
