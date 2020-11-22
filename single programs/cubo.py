@@ -65,7 +65,7 @@ Label(root, textvariable=risultato2, font=('verdana', 15)).place(height=20, x=29
 Label(root, textvariable=risultato, font=('verdana', 15)).place(height=20, x=260, y=240)
 Button(root, text="CALCOLA AREA CUBO", command=calcoloarea, font=('verdana', 15)).place(height=25, x=5, y=210)
 Button(root, text="CALCOLA VOLUME CUBO", command=calcolovol, font=('verdana', 15)).place(height=25, x=5, y=270)
-Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=505, y=490)
+Button(root, text="RESET", command=reset, font=('verdana', 15)).place(height=25, x=505, y=330)
 
 label = Label(root)
 label.place(height=200, x=400, y=40)
