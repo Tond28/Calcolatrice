@@ -1,7 +1,7 @@
 # ➕➖Calcolatrice➗✖️
 - Creatore: Gaetano Citarella, Filippo Tondelli
 - Versione programma: 0.4.4
-## 📍Per funzionare neccessità di:
+## 📍Per funzionare neccessita di:
 - __Python 3.8__ (consigliata)
 - __Pip Pillow 8.0.1__ (consigliata), per il download fare ___pip install Pillow___ sul terminale per scaricare Pillow
 ## 📍Utilità
