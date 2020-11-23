@@ -85,6 +85,9 @@ def open_program_cono():
 def open_program_percentuale():
     os.system('"%s"' %"single programs\percentuale.py")
 
+def open_program_massa():
+    os.system('"%s"' %"single programs\massa.py")
+
 def donothing():
    filewin = Toplevel(root)
    button = Button(filewin, text="Lorem Ipsum")
@@ -123,6 +126,7 @@ filemenu3.add_command(label="Forze 2", command=open_program_forze2)
 filemenu3.add_command(label="Momenti Forze", command=open_program_Momento)
 filemenu3.add_command(label="Dinamica", command=open_program_Dinamica)
 filemenu3.add_command(label="Converititore velocità", command=open_program_velocita)
+filemenu3.add_command(label="Massa", command=open_program_massa)
 
 editmenu = Menu(menubar, tearoff=0)
 menubar.add_cascade(label="Geometria", menu=editmenu)
