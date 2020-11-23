@@ -10,7 +10,7 @@ mainframe.place(height=0, x=0, y=0)
 
 Label(root, text="Calcolatrice creata da: Gaetano Citarella, Filippo Tondelli", font=('verdana', 15)).place(height=25, x=0, y=0)
 Label(root, text="Questo programma è stato ideato per fare calcoli di: \nMatematica di Base, Algebra, Fisica, Geometria, Geometria Solida.", font=('verdana', 10)).place(height=40, x=70, y=30)
-Label(root, text="^ATTUALMENTE IN AGGIORNAMENTO^", font=('verdana', 10)).place(height=20, x=165, y=70)
+Label(root, text="^ATTUALMENTE IN AGGIORNAMENTO^", font=('verdana', 10), fg='#ff0000').place(height=20, x=165, y=70)
 
 frames = [PhotoImage(file='images/spalla2.gif',format = 'gif -index %i' %(i)) for i in range(40)]
 def update(ind):
