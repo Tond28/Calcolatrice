@@ -475,3 +475,4 @@ root.after(0, update, 0)
 root.bind('<Return>', risultato)
 
 root.mainloop()
+
