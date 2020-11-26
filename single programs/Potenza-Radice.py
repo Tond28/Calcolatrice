@@ -3,25 +3,33 @@ from tkinter import ttk
 
 
 def potenza(*args):
- try:
-     base_1=float(bas_1.get())
-     esponente_1=float(esp_1.get())
-     risultato.set(base_1**esponente_1)
+    try:
+        base_1=float(bas_1.get())
+        esponente_1=float(esp_1.get())
+        risultato.set(base_1**esponente_1)
 
- except ValueError:
-     risultato.set("ERRORE")
-     pass
+    except ValueError:
+        risultato.set("ERRORE")
+        pass
 
 
 def radice(*args):
- try:
-     base_2=float(bas_2.get())
-     esponente_2=float(esp_2.get())
-     risultato2.set(base_2**(1/esponente_2))
+    try:
+        base_2=float(bas_2.get())
+        esponente_2=float(esp_2.get())
+        if base_2<0 and (esponente_2%2)==0 or esponente_2==0:
+            risultato2.set("ERRORE")
+        else:
+            if base_2>=0:
+                risultato2.set(base_2**(1/esponente_2))
+            else:
+                base_2*=-1
+                risultato2.set((base_2**(1/esponente_2))*-1)
+            
      
- except ValueError:
-     risultato2.set("ERRORE")
-     pass
+    except ValueError:
+        risultato2.set("ERRORE")
+        pass
 
 
 def reset(*args):                                                                           
